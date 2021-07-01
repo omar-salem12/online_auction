@@ -6,5 +6,7 @@
 </div>
 
 <div class="row">
-    we'll render several productItem components here
+    <div *ngFor="let product of products" class="col-sm-4 col-lg-4 col-md-4"> 
+          <nga-product-item [product]="product"></nga-product-item>
+    </div>
 </div>
